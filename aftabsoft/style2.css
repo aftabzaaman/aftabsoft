@@ -1,0 +1,210 @@
+/* Reset some default styles */
+body{
+    margin: 0;
+    text-align: center;
+    font-family: 'Kumbh Sans', 'Open Sans', sans-serif;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 10% auto auto auto auto auto 20%;
+    grid-template-areas: 
+                        "nav nav nav"
+                        "aside1 texthead aside2"
+                        "aside1 inputTextArea1 aside2"
+                        "aside1 convertButton1 aside2"
+                        "aside1 output-container aside2"
+                        "aside1 downloadLink aside2"
+                        "footer footer footer"
+                        
+    
+    
+    
+    ;
+
+}
+
+
+
+
+nav{
+    box-shadow: 0px 3px 15px rgb(218, 218, 218);
+    grid-area: nav;
+}
+
+.aside1{
+    grid-area: aside1;
+}
+
+.aside2{
+    grid-area: aside2;
+}
+
+.texthead{
+    grid-area: texthead;
+    font-weight: 500;
+    margin-top: 100px;
+    margin-bottom: 60px;
+    font-size: 38px;
+
+}
+
+textarea{
+    background-color: #F5FDFF;
+    width: 90%;
+    padding: 20px;
+    height: 100px;
+    border: 0.5px solid rgb(204, 202, 202);
+    border-radius: 8px;;
+}
+
+.output-container{
+    margin-top: 60px;
+    margin-bottom: 40px;
+    grid-area: output-container;
+    position: relative;
+}
+
+.inputTextArea1{
+    grid-area: inputTextArea1;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.convertButton1{
+    grid-area: convertButton1;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+
+footer{
+    grid-area: footer;
+}
+
+button {
+    padding: 10px;
+}
+
+
+#copyButton {
+    position: absolute;
+    top: 3px;
+    right: 20px;
+    background-color: #4bd16d;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 7px 20px;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 7px;
+    font-family: 'Kumbh Sans', 'Open Sans', sans-serif;
+}
+
+
+
+#downloadLink1{
+    background-color: #248ae9;
+    color: white;
+    margin-top: 20px;
+    border: none;
+    border-radius: 10px;
+    padding: 13px 40px;
+    font-family: 'Kumbh Sans', 'Open Sans', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+#convertButton{
+    background-color: #161616;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 40px;
+    font-family: 'Kumbh Sans', 'Open Sans', sans-serif;
+    font-weight: 500;
+}
+
+
+/* 1. Extra Small Devices (e.g., smartphones):   - Breakpoint: 0px to 575px   - Media Query:  */
+
+@media (max-width: 575px) { 
+
+    body{
+
+        grid-template-columns: 0.5fr 3fr 0.5fr;
+    
+    }
+
+    #copyButton {
+        top: 3px;
+        right: 0px;
+        font-size: 10px;
+    }
+
+    .texthead{
+        grid-area: texthead;
+        font-weight: 500;
+        margin-top: 90px;
+        margin-bottom: 40px;
+        font-size: 23px;
+    
+    }
+
+ }
+
+/* 2. Small Devices (e.g., smartphones or small tablets):   - Breakpoint: 576px to 767px   - Media Query:  */
+
+@media (min-width: 576px) and (max-width: 767px) { 
+
+
+    body{
+
+        grid-template-columns: 0.5fr 3fr 0.5fr;
+    
+    }
+
+    #copyButton {
+        top: 3px;
+        right: 0px;
+        font-size: 11px;
+    }
+
+    .texthead{
+        grid-area: texthead;
+        margin-top: 90px;
+        margin-bottom: 40px;
+        font-size: 28px;
+    
+    }
+
+ }
+
+
+ /* 3. Medium Devices (e.g., tablets or small laptops):   - Breakpoint: 768px to 991px   - Media Query: */
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    body{
+
+        grid-template-columns: 0.5fr 3fr 0.5fr;
+    
+    }
+
+    #copyButton {
+        top: 3px;
+        right: 10px;
+        font-size: 12px;
+    }
+
+    .texthead{
+        grid-area: texthead;
+        font-weight: 500;
+        margin-top: 100px;
+        margin-bottom: 40px;
+        font-size: 31px;
+    
+    }
+
+ }
+
