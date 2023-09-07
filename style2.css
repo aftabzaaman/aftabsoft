@@ -104,7 +104,7 @@ button {
 
 
 #downloadLink1{
-    background-color: #248ae9;
+    background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
     color: white;
     margin-top: 20px;
     border: none;
